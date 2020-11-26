@@ -1,5 +1,6 @@
 body {
     margin: auto 0;
+    font-family: Arial;
 }
 
 .zone {
@@ -12,6 +13,14 @@ body {
     border-radius:4px;
     border:1px solid #bbb;
     transition: all 0.3s linear;
+}
+
+/* NAV */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .main-nav {
@@ -50,6 +59,10 @@ a {
     height: 50vh;
 }
 
+.cover {
+    width: 30rem;
+}
+
 /* GRID */
 
 .grid-wrapper {
@@ -75,10 +88,17 @@ footer {
 }
 
 .zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0, 0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.box:hover {
+    -webkit-transform:(-7deg);
+    -moz-transform:(-7deg);
+    -o-transform:(-7deg); 
+    transform:(-7deg); 
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
